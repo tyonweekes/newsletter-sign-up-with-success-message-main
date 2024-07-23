@@ -56,6 +56,7 @@ main {
     height: 40.0625rem;
     border-radius: 2.25rem;
     display: flex;
+    justify-content: flex-end;
     padding: 1.25rem;
     margin-bottom: .625rem;
 }
@@ -79,9 +80,7 @@ p, ul, li, input {
 }
 
 .left-side {
-    width: 23.5rem;
-    height: 27.875rem;
-    margin: 6.125rem 4rem;
+    padding: 6.125rem 4rem;
 }
 
 .left-side p {
@@ -103,12 +102,26 @@ input {
     border-radius: .5rem;
 }
 
+input:focus {
+    border: .0625rem solid var(--dark-slate-grey);
+}
+
+input:focus::-webkit-input-placeholder {
+    color: var(--dark-slate-grey);
+}
+
 button {
     font-family: var(--roboto-bold);
     color: var(--white);
     background-color: var(--dark-slate-grey);
     width: 23.5rem;
     border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(rgba(255, 106, 58, 1), rgba(255, 82, 123, 1));
+    box-shadow: 0rem 1rem 2rem rgba(255, 97, 85, .5);
 }
 
 form button {
@@ -133,13 +146,8 @@ ul li::before {
     margin-right: .5rem;
 }
 
-
-.bullet {
-    display: inline-block;
-}
-
-.desktop-right-side {
-    margin-right: 1.5rem;
+ul {
+    margin-bottom: 2rem;
 }
 
 .mobile-right-side {
