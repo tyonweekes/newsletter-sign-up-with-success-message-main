@@ -64,6 +64,26 @@ main {
 .success-message-container {
     display: none;
     background-color: var(--white);
+    width: 31.5rem;
+    height: 32.5rem;
+    border-radius: 2.25rem;
+    padding: 4rem;
+    margin-bottom: .625rem;
+}
+
+.success-message-container p {
+    margin-bottom: 2.5rem;
+}
+
+.success-message-container button {
+    width: 23.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.success-icon {
+    margin-bottom: 2.5rem;
 }
 
 h1 {
@@ -83,7 +103,7 @@ p, ul, li, input {
     padding: 6.125rem 4rem;
 }
 
-.left-side p {
+.description {
     margin-bottom: 1.5rem;
 }
 
@@ -91,6 +111,7 @@ label {
     font-family: var(--roboto-bold);
     color: var(--dark-slate-grey);
     font-size: .75rem;
+    margin-bottom: .5rem;
 }
 
 input {
@@ -108,6 +129,22 @@ input:focus {
 
 input:focus::-webkit-input-placeholder {
     color: var(--dark-slate-grey);
+}
+
+.error-text {
+    display: none;
+    color: var(--tomato);
+    font-family: var(--roboto-bold);
+    font-size: .75rem;
+}
+
+.error-text-placeholder-color::-webkit-input-placeholder {
+    color: var(--tomato);
+ }
+
+.label-and-error-text {
+    display: flex;
+    justify-content: space-between;
 }
 
 button {
@@ -131,7 +168,7 @@ form button {
     font-size: 1rem;
 }
 
-.email-styling {
+.user-email {
     font-family: var(--roboto-bold);
 }
 
