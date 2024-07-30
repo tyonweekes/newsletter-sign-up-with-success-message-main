@@ -61,6 +61,14 @@ main {
     margin-bottom: .625rem;
 }
 
+.desktop-sign-up-illustration {
+    display: block;
+}
+
+.mobile-sign-up-illustration {
+    display: none;
+}
+
 .success-message-container {
     display: none;
     background-color: var(--white);
@@ -187,8 +195,85 @@ ul {
     margin-bottom: 2rem;
 }
 
-.mobile-right-side {
-    display: none;
+/* Responsiveness */
+@media screen and (max-width: 37.5rem) {
+    .desktop-right-side {
+        display: none;
+    }
+
+    .sign-up-form-container {
+        width: 23.4375rem;
+        height: 58.5rem;
+        border-radius: 0;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .mobile-sign-up-illustration {
+        display: block;
+        margin-top: 7.5rem;
+        width: 100%;
+    }
+
+    .left-side {
+        width: 23.4375rem;
+        height: 57.5rem;
+        padding: 0;
+    }
+
+    .form-container {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .success-message-container {
+        width: 23.4375rem;
+        height: 58.5rem;
+        border-radius: 0;
+        padding: 17.31rem 1.5rem 2.5rem 1.5rem;
+    }
+
+    .success-message-container button {
+        width: 20.4375rem;
+        height: 3.5rem;
+        font-size: 1rem;
+        border-radius: .5rem;
+    }
+
+    .success-message-container p {
+        margin-bottom: 16.4375rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    ul li {
+        list-style-position: outside;
+    }
+
+    ul li::before {
+        margin-right: 0;
+    }
+
+    ul {
+        padding: 0 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    input {
+        width: 20.4375rem;
+    }
+
+    button {
+        width: 20.4375rem;
+        padding: 1.125rem 3rem;
+    }
+
+    form button {
+        padding: 1.125rem 2.875rem;
+        border-radius: .5rem;
+        margin-bottom: 2.5rem;
+    }
 }
 
 /* Attribution */
@@ -197,6 +282,7 @@ ul {
     text-align: center; 
     color: var(--white);
     font-family: var(--roboto-regular);
+    margin-bottom: 1.25rem;
 }
 
 .attribution a { 
